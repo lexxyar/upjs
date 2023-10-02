@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@lexxsoft/odata-query": "^1.21.0",
+    "lodash": "^4.17.21",
     "vue": "^3.3.4"
   }
 }
