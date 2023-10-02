@@ -1,0 +1,40 @@
+{
+  "name": "@lexxsoft/upjs",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "watch": "npx tsc -w",
+    "patch": "npm version patch",
+    "minor": "npm version minor",
+    "major": "npm version release",
+    "test": "npm run build && mocha",
+    "test:cover": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha",
+    "coverage": "nyc mocha",
+    "mocha": "mocha",
+    "index": "npm run build && node dist/index.js",
+    "doc": "npx typedoc src/index.ts"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Aleksey Komov",
+  "license": "MIT",
+  "devDependencies": {
+    "coveralls": "^3.1.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "typedoc": "^0.25.1",
+    "typescript": "^5.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lexxyar/up.git"
+  },
+  "dependencies": {
+    "@lexxsoft/odata-query": "^1.21.0"
+  }
+}
