@@ -35,6 +35,7 @@
     "url": "git+https://github.com/lexxyar/up.git"
   },
   "dependencies": {
-    "@lexxsoft/odata-query": "^1.21.0"
+    "@lexxsoft/odata-query": "^1.21.0",
+    "vue": "^3.3.4"
   }
 }
