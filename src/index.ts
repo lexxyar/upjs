@@ -3,7 +3,7 @@ import {IUpTableHeader} from "./lib/interfaces/IUpTableHeader";
 import {IUpSortable} from "./lib/interfaces/IUpSortable";
 import {IUpCheckable} from "./lib/interfaces/IUpCheckable";
 import {IUpIdentifiable} from "./lib/interfaces/IUpIdentifiable";
-import {useForm} from "./lib/composable/useForm"
+import useForm from "./lib/composable/useForm"
 
 export {
     UpTableHeader,

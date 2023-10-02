@@ -12,7 +12,7 @@ interface UpFormProps<TForm extends FormDataType> {
 
 export type UpForm<TForm extends FormDataType> = TForm & UpFormProps<TForm>
 
-export function useForm<TForm extends FormDataType>(data: TForm | (() => TForm)): UpForm<TForm> {
+export default function useForm<TForm extends FormDataType>(data: TForm | (() => TForm)): UpForm<TForm> {
     let defaults = typeof data === 'object' ? cloneDeep(data) : cloneDeep(data())
     const form = reactive({
         ...cloneDeep(defaults),
